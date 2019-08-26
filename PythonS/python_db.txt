@@ -1,0 +1,15 @@
+SyntaxError : invaild syntax
+구문 오류 : 문법에 맞지 않다
+문법에 맞게 썼는지 확인한다
+IndentationError: expected an indented block
+들여쓰기 오류: 들여쓰기를 해야 한다
+오류 난 부분에서 들여쓰기를 안 한 부분이 있는지 확인한다
+NameError: name ‘변수명’ is not defined
+이름 오류: 이름 ‘변수명’ (이)가 정의되지 않았다
+사용한 변수를 정의했는지 확인한다
+TypeError: unsupported operand type(s) for +: ‘a’ and ‘b’
+유형 오류: 연산자 +가 피연자 유형 ‘변수1’와 ‘변수2’ (을)를 지원하지 않는다
+'변수 1' 과 '변수 2' 의 type이 서로 다른지 확인한다
+AttributeError: type object ‘int’ has no attribute ‘a’
+속성 오류: ‘int’ 유형 객체에는 ‘변수명’ 속성이 없다
+'변수명'의 속성을 다른 타입으로 바꾼다.

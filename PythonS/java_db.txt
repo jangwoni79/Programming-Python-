@@ -1,0 +1,18 @@
+Exception in thread "main" java.lang.NoClassDefFoundError:파일명
+클래스 파일을 찾을 수 없는 경우
+실행하려는 클래스 파일 이름이 제대로 되어 있는지 확인한다.
+cannot resolve symbol symbol : class in(에러 부분) location : class StackTest(찾으려는 위치)
+이해할 수 없는 클래스나 메소드, 변수명이 올 경우
+철자가 틀렸을 경우에 많이 발생, 대소문자와 오타를 확인한다. 클래스에서 발생한 경우 import를 선언해주었는지 확인한다
+non-static variable 변수이름(or method 메소드 이름) cannot br referenced from a static context
+static 메소드 안에서 static으로 선언되지 않은 메소드나 변수를 사용했을 경우 특히, 메소드의 경우는 인스턴스를 사용하지 않고 static 메소드 내 에서 바로 선언할 경우
+static 선언자의 사용 여부를 살펴보고 static으로 선언되지 않은 메소드나 변수가 있는지 확인 해 본다. 만약 그런 것이 있으면 메소드를 새로 만들어 그 쪽에서 선언한다. 단, 인스턴스를 생성해서 불러줘야 한다는 것을 잊지 말아야 한다.
+valiable 변수명 might not have been initialized
+지역변수인 변수명의 변수가 초기화 되지 않았을 경우
+지역변수(메소드 내에서 선언한 변수)를 초기화 하지 않은 채 선언하였을 경우 발생, 멤버 필드가 아닌 경우는 반드시 변수 선언시 초기화를 해주어야 한다. (멤버 필드는 자바 프로그램 자체에서 자동으로 Default 값으로 초기화 해준다.)
+class 클래스명 is public, should be declared in a file named 클래스명.java
+클래스명이 public으로 선언되었는데 파일명과 다를 경우
+public으로 선언된 클래스가 있다면 반드시 그 클래스명과 파일명이 같아야 한다. 클래스 명과 파일명의 대/소문자 및 철자가 같은지 확인 해 본다. 또한, public으로 선언된 클래스가 하나 이상 있는지 찾아본다.(반드시 하나만 있어야 한다.)
+d
+d
+d
