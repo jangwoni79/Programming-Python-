@@ -20,5 +20,7 @@ if __name__ == '__main__':
         html+="<a href = '{}'>{}</a><br />".format(link, title)       #<a href = 'link'>title</a>
     html+="</body></html>"
     # print(html)
+    outputSoup = BeautifulSoup(html, "lxml")
+    prettyHtml = str(outputSoup.prettify())
     with open("이츠마인.html", "w", encoding = "utf-8") as f:
-        f.write(html)
+        f.write(prettyHtml)
