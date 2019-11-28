@@ -8,6 +8,7 @@ if __name__ == '__main__':
     #네이버 웹툰 > 이츠마인 제목 가져오기
     data = urlopen("https://comic.naver.com/webtoon/list.nhn?titleId=710760&weekday=wed")
     soup = BeautifulSoup(data, "lxml") #httpResponse -> HTML
+    data.close()
     # print(soup)
     html = "<html><head><meta charset='uft-8'></head><body>"
     cartoon_titles = soup.find_all("td",attrs={"class":"title"}) #<td class = "title">...</td>
